@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="./Crud.css">
+<img src="klaus.jpeg" align="left" width="150" height="150">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-child magenta">
+
+<table class="table">
+    <tr class="table-row">
+        <td>
+            <form onsubmit="event.preventDefault(); onFormSubmit();" >
+                <div class="container">
+                    <h1 id="heading1">Manage Leaves</h1>
+                    <p id="p1">Please fill  this form to apply Leave</p>
+                    <hr>
+            
+                    <label id="label" for="Emp-Name"><b>Emp-Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" required >
+            
+                    <label id="label" for="Department"><b>Department</b></label>
+                    <input type="text" placeholder="Enter Department" name="Department" id="Department" required >
+
+		    <label id="label" for="Team Head"><b>Description</b></label>
+                    <input type="text" placeholder="Enter Description" name="Description" id="Description" required >
+            
+                    <label id="label" for="Leaves"><b>Leaves</b></label>
+                    <input type="number" name="leaves" id="Leaves" placeholder="Leaves" required>
+
+		     
+                    <hr>
+            
+                    <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+                    <button type="submit" name="submit"class="registerbtn">Submit</button>
+                </div>
+            </form>
+        </td>
+       
+    </tr>
+    
+</table>
+</div>
+<div class="flex-child green">
+ <td>
+            <table  id="empList">
+                <h1 id="record">Record</h1>
+                <thead id="tab_head">
+                        <tr>
+                            <th>Emp-Name</th>
+                            <th>Department</th>
+                            <th>Leaves</th>
+
+                            <th>Description</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                </thead>
+               
+                <tbody id="tab_body">
+
+                </tbody>
+                
+            </table>
+        </td>
+        </div>
+</div>
+    <script src="./Crud.js"></script>
+</body>
+</html>
+
+<!-- ------------------------------------------------ -->
